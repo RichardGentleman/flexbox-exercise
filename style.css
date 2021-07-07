@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+    padding: 50px;
+    background: linear-gradient(to bottom right, #b50505, #ffd000, #b50505);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket {
+    max-width: 800px;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px 10px rgba(0, 0, 0, .7);
+
+    display: flex;
+    align-items: strech;
+}
+.ticket__hero {
+    flex: 0 0 45%;
+}
+
+.ticket__img {
+    width: 100%;
+    display: block;
+}
+
+.ticket__content {
+    flex: 1;
+    background: #FFF;
+    padding: 21px 30px;
+    text-align: center;
+}
+
+.ticket__price {
+    flex: 0 1 50px;
+    background: linear-gradient(to bottom, #b50505, #ffd000, #b50505);
+    writing-mode: vertical-rl;
+    color: #000;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket__details {
+    font-size: 15px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 700; 
+}
+
+.ticket__subheading {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.ticket__heading {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.ticket__tags {
+    display: flex;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.ticket__tag {
+    padding: 5px 10px;
+    border-radius: 100px;    
+    margin: 5px auto 0 auto;
+}
+
+.ticket__tag--1 {
+    background-color: #ffd000;   
+}
+.ticket__tag--2 {
+    background-color: #b50505;
+    color: #FFF;
+    margin-left: 10px;
+}
+
+.attribute {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.attribute a {
+    color: #444;
+    transition: color .7s;
+}
+
+.attribute a:hover,
+.attribute a:active {
+    color: #b50505;
+}
